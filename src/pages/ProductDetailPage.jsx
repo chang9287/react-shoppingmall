@@ -10,7 +10,7 @@ import products from '../components/data/products.json'
 import "../styles/pages/ProductDetailPage.css"
 
 const ProductDetailPage = () => {
-  const { id, category } = useParams();
+  const { id } = useParams();
 
   const product = products.find((product) => product.id === parseInt(id));
 

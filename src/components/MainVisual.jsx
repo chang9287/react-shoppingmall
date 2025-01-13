@@ -1,8 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -15,7 +13,7 @@ import 'swiper/css/pagination';
 import "../styles/components/MainVisual.css"
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const MainVisual = () => {
   const mainImages = [

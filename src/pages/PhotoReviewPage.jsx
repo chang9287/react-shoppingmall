@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import { Link } from 'react-router-dom';
 import ProductPhotoReviwCards from '../components/ui/ProductPhotoReviwCards';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
