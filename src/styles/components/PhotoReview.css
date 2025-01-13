@@ -1,0 +1,94 @@
+.photo-review{
+  width: 100%;
+  /* border: 2px solid cornflowerblue; */
+  margin-top: 100px;
+  position: relative;
+}
+.photo-review::after{
+  content: '';
+  width: 100%;
+  height: 65%;
+  background-color: #adadad;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.photo-review-list{
+  padding: 0 10px;
+  
+}
+
+.photo-review-more{
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 14px;
+  color: #777;
+  border: none;
+  background-color: transparent;
+}
+.photo-review-more a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.photo-review-more a svg{
+  font-size: 15px;
+  transform: translateY(1px);
+}
+
+
+/* 스와이퍼 */
+
+
+.swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite{
+  width: 40%;
+  height: 2px;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddd;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: #777;
+}
+
+.photo-review-list {
+  position: relative;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  font-family: "swiper-icons";
+  font-size: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #777;
+}
+.custom-prev:disabled,
+.custom-next:disabled{
+  opacity: 0.2;
+}
+
+.custom-prev {
+  left: -50px; 
+}
+.custom-prev::after {
+  content: 'prev';
+}
+
+.custom-next {
+  right: -50px; /* Swiper의 오른쪽 밖 */
+}
+.custom-next::after {
+  content: 'next';
+}

@@ -1,0 +1,106 @@
+.product-card{
+  width: calc(100% / 4 - 15px);
+}
+
+/* 이미지 부분 */
+.product-image{
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e9e9e9;
+  
+}
+
+.product-image a{
+  display: flex;
+  position: relative;
+}
+
+
+.product-image a > img{
+  width: 100%;
+  height: 335px;
+}
+
+.product-image a .product-button{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  bottom: 15px;
+  right: -45px;
+  transition: 0.5s ease;
+  z-index: 10;
+}
+
+.product-image a:hover .product-button{
+  right: 10px;
+}
+
+.product-image a .product-button li{
+  display: flex;
+  
+  border-radius: 50%;
+}
+.product-image a .product-button li button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(248,248,248,0.8);
+}
+.product-image a .product-button li button > img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 텍스트 부분 */
+.product-info{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.product-info h2{
+  margin-bottom: 5px;
+}
+.product-info h2 a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-info p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.product-info .product-price{
+  font-size: 15px;
+  font-weight: bold;
+}
+.product-price .original-price{
+  color: #777777;
+  text-decoration: line-through;
+  
+}
+.product-price .current-price{
+  display: flex;
+  gap: 5px;
+  
+}
+.product-price .current-price .discount-rate{
+  color: #adadad;
+  font-weight: 600;
+  
+}
+.product-price .current-price .discounted-price{
+  color: #000;
+  font-weight: 600;
+}

@@ -1,0 +1,90 @@
+.category-page{
+  width: 100%;
+}
+.category-page-inner{}
+
+/* 통합 제목 */
+.category-page-title{
+  padding: 30px 0 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* 통합 제목 아래에 있는 기능 */
+.category-page-function{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 등록 제품 개수 */
+.enrolled-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.enrolled-products span{
+  display: block;
+  color: #333;
+  font-size: 13px;
+}
+.enrolled-products span strong{
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.enrolled-products em{
+  display: block;
+  font-style: normal;
+  color: #333;
+  font-size: 13px;
+}
+/* 상품 정렬 방식 */
+.sort-option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort-option button{
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.2s;
+}
+.sort-option button:hover{
+  font-weight: bold;
+}
+
+/* 상품 리스트 */
+.products-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 페이지네이션 */
+.category-products-pagination{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.category-products-pagination > button{
+  border: none;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #e6e3e3;
+  cursor: pointer;
+}
+.category-products-pagination > button.active{
+  background-color: #464646;
+  color: #fff;
+}

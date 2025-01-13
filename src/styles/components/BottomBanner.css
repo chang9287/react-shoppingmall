@@ -1,0 +1,43 @@
+.bottom-banner{
+  width: 100%;
+  /* border: 2px solid salmon; */
+  margin-top: 100px;
+}
+
+.bottom-banner-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.banners{
+  width: 48%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.banners a{
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.banners a img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banners a .bottom-banner-title{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.banners a .bottom-banner-title h1{
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.banners a .bottom-banner-title p{
+  font-size: 12px;
+  color: #333;
+}

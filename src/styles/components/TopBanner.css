@@ -1,0 +1,36 @@
+.top-banner{
+  width: 100%;
+  margin-top: 100px;
+  /* border: 2px solid purple; */
+}
+
+.top-banner-wrap{}
+.top-banner-wrap a{
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.top-banner-wrap a img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.top-banner-title{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.top-banner-title h1{
+  color: #1a1a1a;
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.top-banner-title p{
+  color: #333;
+  font-size: 16px;
+}

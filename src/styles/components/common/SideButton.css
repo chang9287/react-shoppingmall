@@ -1,0 +1,55 @@
+.side-button{
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.side-button > div{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+  /* border: 1px solid black; */
+  transition: ease all 0.2s;
+}
+.side-button > div > a{
+  display: block;
+  width: 100%;
+  color: #333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.side-button > div > a > svg{
+  font-size: 15px;
+  transition: inherit;
+}
+
+.kakao:hover{
+  background-color: #FEE500;
+}
+.kakao:hover > a > svg{
+  color: #391b1b;
+}
+
+.insta:hover{
+  background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) ,linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+}
+.insta:hover > a > svg{
+  color: #fff;
+}
+
+.go-to-top:hover{
+  background-color: #adadad;
+}
+.go-to-top:hover > a > svg{
+  color: #fff;
+}

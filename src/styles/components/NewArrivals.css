@@ -1,0 +1,32 @@
+.new-arrivals{
+  width: 100%;
+  /* border: 2px solid yellowgreen; */
+  margin-top: 100px;
+}
+.new-products-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.new-products-pagination{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.new-products-pagination > button{
+  border: none;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e6e3e3;
+  cursor: pointer;
+  padding: 0;
+}
+.new-products-pagination > button.active{
+  background-color: #464646;
+  color: #fff;
+}

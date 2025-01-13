@@ -1,0 +1,16 @@
+.section-title{
+  padding-bottom: 30px;
+}
+.section-title h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'NotoSans';
+}
+.section-title p{
+  font-size: 14px;
+  color: #777777;
+}

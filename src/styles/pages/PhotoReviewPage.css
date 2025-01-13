@@ -1,0 +1,172 @@
+.photo-review-page{
+  width: 100%;
+  /* border: 2px solid cornflowerblue; */
+  position: relative;
+}
+.photo-review-page-inner{}
+
+.photo-review-page-title{
+  text-align: center;
+  padding: 45px 0 40px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Photo-Review-Page-List */
+.photo-review-page-list{
+  padding: 0 10px;
+  position: relative;  
+  margin-bottom: 150px;
+}
+
+
+/* 스와이퍼 */
+photo-review-page > .swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite{
+  width: 40%;
+  height: 2px;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddd;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: #777;
+}
+
+.review-page-custom-prev,
+.review-page-custom-next {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  font-family: "swiper-icons";
+  font-size: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #777;
+}
+.review-page-custom-prev:disabled,
+.review-page-custom-next:disabled{
+  opacity: 0.2;
+}
+
+.review-page-custom-prev {
+  left: -50px; 
+}
+.review-page-custom-prev::after {
+  content: 'prev';
+}
+
+.review-page-custom-next {
+  right: -50px; /* Swiper의 오른쪽 밖 */
+}
+.review-page-custom-next::after {
+  content: 'next';
+}
+
+/* photo-review-page-search */
+.photo-review-page-search{
+  width: 100%;
+}
+
+.search-list{
+  width: 100%;
+}
+.search-list thead{
+  width: 100%;
+}
+.search-list thead tr{
+  width: 100%;
+}
+.search-list thead tr th{
+  padding: 10px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+.search-list thead tr th:nth-child(1){
+  width: 6%;
+}
+.search-list thead tr th:nth-child(2){
+  width: 7%;
+}
+.search-list thead tr th:nth-child(3){
+  width: 38%;
+}
+.search-list thead tr th:nth-child(4){
+  width: 7%;
+}
+.search-list thead tr th:nth-child(5){
+  width: 8%;
+}
+.search-list thead tr th:nth-child(6){
+  width: 4%;
+}
+.search-list thead tr th:nth-child(7){
+  width: 6%;
+}
+.search-result{
+  padding: 55px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  color: #6d6d6d;
+  font-size: 13px;
+}
+.search-option{
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 0 10px;
+}
+.search-option > select {
+  padding: 0 20px 0 10px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  height: 40px;
+  box-sizing: border-box;
+  appearance: none; /* 기본 스타일 제거 */
+  -webkit-appearance: none; /* Safari 및 Chrome용 */
+  -moz-appearance: none; /* Firefox용 */
+
+  background-image: url(../../../public/assets/images/PhotoReviewPage-select-img.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* 화살표 위치 조정 */
+  background-size: 12px; /* 화살표 크기 조정 */
+  padding-right: 30px; /* 화살표를 위한 공간 확보 */
+  /* PhotoReviewPage-select-img.png */
+}
+.search-option > select:focus{
+  border: 1px solid #333;
+  outline: none;
+}
+.search-option > select > option {}
+.search-option > input{
+  border: 1px solid #e0e0e0;
+  height: 40px;
+  padding: 2px 4px 2px 15px;
+  box-sizing: border-box;
+  font-size: 13px;
+  outline: 1px;
+}
+.search-option > input:focus{
+  border: 1px solid #333;
+}
+.search-option > input:hover{
+  border: 1px solid #333;
+}
+.search-option > button{
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+.search-option > button:hover{
+  background-color: #f7f7f7;
+}
