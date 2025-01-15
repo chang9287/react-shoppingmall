@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=쇼핑몰%20 클론코딩&animation=fadeIn&fontColor=242424&fontSize=40" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=쇼핑몰 클론코딩%20&animation=fadeIn&fontColor=242424&fontSize=40" />
   </div>
   <div align= "center"><h3>작업자 : 안창기</h3></div>  
     
