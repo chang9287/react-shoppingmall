@@ -1,13 +1,13 @@
 <div align="center">
   <br />
   <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=쇼핑몰%20&animation=fadeIn&fontColor=242424&fontSize=40" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=쇼핑몰%20 클론코딩&animation=fadeIn&fontColor=242424&fontSize=40" />
   </div>
   <div align= "center"><h3>작업자 : 안창기</h3></div>  
     
   <br />
   
-  <a href="https://github.com/chang9287/public-renewal.git">
+  <a href="https://github.com/chang9287/react-shoppingMall-project.git">
   <img src="https://img.shields.io/badge/GitHub%20Pages-Active-AEF359?&logo=github&logoColor=white" alt="GitHub-Pages" />
   </a>
   <br />
