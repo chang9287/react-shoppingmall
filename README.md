@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+<div align="center">
+  <br />
+  <div align= "center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=쇼핑몰%20&animation=fadeIn&fontColor=242424&fontSize=40" />
+  </div>
+  <div align= "center"><h3>작업자 : 안창기</h3></div>  
+    
+  <br />
+  
+  <a href="https://github.com/chang9287/public-renewal.git">
+  <img src="https://img.shields.io/badge/GitHub%20Pages-Active-AEF359?&logo=github&logoColor=white" alt="GitHub-Pages" />
+  </a>
+  <br />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 목차
 
-## Available Scripts
+1. **기술 스택**
+2. **주요 기능**
+3. **주요 페이지**
+4. **페이지 설명**
+5. **링크**
 
-In the project directory, you can run:
+<br />
 
-### `npm start`
+## 🛠 기술 스택
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Front-end**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?&logo=javascript&logoColor=white)
+  
 
-### `npm test`
+**program**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ![Vscode](https://img.shields.io/badge/Vscode-007ACC?&logo=visualstudiocode&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?&logo=Figma&logoColor=white)
 
-### `npm run build`
+**ETC**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ![GitHub](https://img.shields.io/badge/-GitHub-181717?&logo=github&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 주요 기능
 
-### `npm run eject`
+- Swiper Slide
+- Pagination
+- Accordion
+- Tab / Tab in Tab
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 주요 페이지
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+|                               메인 페이지                               |                               메인 페이지 - 테블릿                       |                               메인 페이지 - 모바일                       |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
+| <img src="images/mainPage.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_mobile.png" alt="Sample Page" height="250px" /> |
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+|                               서브 페이지(1) - 메인                         |                               서브 페이지(1) - 테블릿                              |                               서브 페이지(1) -모바일                               |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| <img src="images/subPage_subNews.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_subNews_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_subNews_mobile.png" alt="Sample Page" height="250px" /> |
+<br />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+|                               서브 페이지(2) -메인                               |                               서브 페이지(2) -테블릿                               |                               서브 페이지(2) -모바일                               |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| <img src="images/subPage_faq.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_faq_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_faq_mobile.png" alt="Sample Page" height="250px" /> |
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br />
 
-### Analyzing the Bundle Size
+## 📌 페이지 설명 
+|                               메인 페이지                               |                               서브 페이지                               |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+|    대표기능 : 슬라이더(main Visual, banner), 아코디언, Tab 안에 Tab기능    |  공지사항 페이지 : 공지사항을 한 눈에 확인할 수 있으며, 효율적으로 탐색할 수 있도록 페이지네이션으로 정렬                                         |
+|    한눈에 들어오는 사용자 중심의 화면 구성                                 |  FAQ 페이지 : 아코이언 기능을 통해 각 질문의 답변을 직관적으로 확인할 수 있고, 많은 질문이 등록되어 있지만 페이지네이션 기능을 통해 쉽게 탐색이 가능                       |
+|    슬라이드형 메인 비주얼로 사용자에게 생동감 있는 첫인상을 제공             |
+|    탭 안에 탭 구조를 통해 다양한 카테고리와 세부 정보를 직관적으로 탐색      |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />
+## 📂 링크 
+<br />
+- <a href="https://www.figma.com/board/6oFqffoL10iF5YL44EXjRf/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=iUUONf4VBQp1ZFc1-1">브레인스토밍</a> <br />
+- <a href="https://www.figma.com/design/3dSrkzoGMp1fkVDeFEyA8Y/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%95%88%EC%B0%BD%EA%B8%B0?node-id=0-1&t=rVMuV8teMeW7mCPD-1">와이어프레임</a> <br />
+- <a href="https://www.figma.com/design/3dSrkzoGMp1fkVDeFEyA8Y/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%95%88%EC%B0%BD%EA%B8%B0?node-id=34-39&t=rVMuV8teMeW7mCPD-1">스타일가이드</a> <br />
+- <a href="https://www.kicte.or.kr/portal/index/mainInitAction.do">리뉴얼 사이트</a>
