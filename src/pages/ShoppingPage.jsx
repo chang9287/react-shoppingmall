@@ -6,6 +6,7 @@ import { TfiPlus, TfiMinus } from "react-icons/tfi";
 import "../styles/pages/ShoppingPage.css"
 
 const ShoppingPage = () => {
+
   return (
     <div className='shopping-page'>
       <div className="shopping-page-inner inner">

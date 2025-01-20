@@ -57,24 +57,11 @@
 
 ## 📄 주요 페이지
 
-|                               메인 페이지                               |                               메인 페이지 - 테블릿                       |                               메인 페이지 - 모바일                       |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
-| <img src="images/mainPage.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_mobile.png" alt="Sample Page" height="250px" /> |
+|                               메인 페이지                               |                  서브 페이지 - 카테고리 페이지                   |                               서브 페이지 - 상품 상세 페이지                       |                               서브 페이지 - 포토리뷰 페이지                       |                               서브 페이지 - 포토리뷰 상세 페이지                       |                               서브 페이지 - 로그인 페이지                      |                               서브 페이지 - 장바구니 페이지                       |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
+| <img src="public/assets/images/Readme-image/mainpage.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/categories-page.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/product-detail-page.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/photo-review-page.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/photo-review-detail-page.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/login-page.png" alt="Sample Page" height="250px" /> | <img src="public/assets/images/Readme-image/mainpage.png" alt="Sample Page" height="250px" /> |
 <br />
 
-|                               서브 페이지(1) - 메인                         |                               서브 페이지(1) - 테블릿                              |                               서브 페이지(1) -모바일                               |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
-| <img src="images/subPage_subNews.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_subNews_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_subNews_mobile.png" alt="Sample Page" height="250px" /> |
-<br />
-
-
-
-|                               서브 페이지(2) -메인                               |                               서브 페이지(2) -테블릿                               |                               서브 페이지(2) -모바일                               |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
-| <img src="images/subPage_faq.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_faq_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/subPage_faq_mobile.png" alt="Sample Page" height="250px" /> |
-
-
-<br />
 
 ## 📌 페이지 설명 
 |                               메인 페이지                               |                               서브 페이지                               |
@@ -86,5 +73,5 @@
 <br />
 ## 📂 링크 
 <br />
-- <a href="https://www.figma.com/board/6oFqffoL10iF5YL44EXjRf/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=iUUONf4VBQp1ZFc1-1">Demo</a> <br />
+- <a href="">Demo</a> <br />
 
