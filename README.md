@@ -59,7 +59,7 @@
 
 |                               메인 페이지                               |                               메인 페이지 - 테블릿                       |                               메인 페이지 - 모바일                       |
 | :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
-| <img src="images/mainPage.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_mobile.png" alt="Sample Page" height="250px" /> |
+| <img src="public/assets/images/Readme-image/mainpage.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_tablet.png" alt="Sample Page" height="250px" /> | <img src="images/mainPage_mobile.png" alt="Sample Page" height="250px" /> |
 <br />
 
 |                               서브 페이지(1) - 메인                         |                               서브 페이지(1) - 테블릿                              |                               서브 페이지(1) -모바일                               |
