@@ -133,9 +133,16 @@
   text-align: center;
   border: 1px solid #e5e5e5;
 }
+
 .quantity-wrap .product-quantity > div input{
-  
+  width: 100%;
+  text-align: center;
+  border: none;
 }
+.quantity-wrap .product-quantity > div input:focus{
+  outline: none;
+}
+
 .quantity-wrap .product-quantity > div input:focus{
   outline: none;  
 }

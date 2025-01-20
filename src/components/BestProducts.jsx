@@ -8,7 +8,7 @@ import products from '../components/data/products.json'
 /* Css */
 import "../styles/components/BestProducts.css"
 
-const BestProducts = () => {
+const BestProducts = ( {addToCart} ) => {
   const bestPerRow = 8; //한 페이지에 보여줄 갯수
   const [bestCurrentPage, setBestCurrentPage] = useState(1) //현재 페이지
 
@@ -47,7 +47,7 @@ const BestProducts = () => {
         <Title title="best product" subtitle="이번 주 저희 쇼핑몰 베스트 상품입니다." />
         <div className="best-products-list">
           {bestCurrentProducts.map((product, index) => (
-            <ProductCards key={index} product={product} />
+            <ProductCards key={index} product={product} addToCart={addToCart}/>
           ))}
         </div>
         {/* 페이지네이션 버튼 */}

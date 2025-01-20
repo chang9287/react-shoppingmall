@@ -35,17 +35,11 @@ const PhotoReviewDetail = () => {
     return <div>상품을 찾을 수 없습니다.</div>;
   }
 
-
   /* 이전 다음 리뷰 */
   const currentReview = productsReview.findIndex((review) => review.reviewIdx === parseInt(reviewIdx));
 
   const prevReview = currentReview > 0 ? productsReview[currentReview - 1].reviewIdx : null;
   const nextReview = currentReview <= productsReview.length - 1 ? productsReview[currentReview + 1].reviewIdx : null;
-
-
-
-
-
 
   return (
     <div className='photo-review-detail'>

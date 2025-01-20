@@ -1,5 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../contexts/CartContext'
+
+/* Css */
 import "../../styles/components/ui/ProductCards.css"
 
 
@@ -8,24 +11,30 @@ const ProductCards = ({product}) => {
   const originalPrice = product.price;
   const discountedPrice = Math.round(originalPrice * (1 - product.discountRate / 100));
 
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = () => {
+    addToCart({...product, quantity:1 });
+  };
+  
   return (
     <div className='product-card'>
       <div className="product-image">
         <Link to={`/${product.category}/${product.id}`}>
           <img src={product.imageUrl} alt="" />
-          <ul className='product-button'>
-            <li>
-              <button className='cart-button'>
-                <img src="/assets/images/cart-button.png" alt="" />
-              </button>
-            </li>
-            <li>
-              <button className='like-button'>
-                <img src="/assets/images/like-button.png" alt="" />
-              </button>
-            </li>
-          </ul>
-        </Link>        
+        </Link>
+        <ul className='product-button'>
+          <li>
+            <button className='cart-button' onClick={handleAddToCart}>
+              <img src="/assets/images/cart-button.png" alt="Cart-Button" />
+            </button>
+          </li>
+          <li>
+            <button className='like-button'>
+              <img src="/assets/images/like-button.png" alt="Like-Button" />
+            </button>
+          </li>
+        </ul>    
       </div>
       <div className="product-info">
         <h2>

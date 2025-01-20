@@ -1,0 +1,53 @@
+.shopping-page{}
+.shopping-page-inner{}
+.shopping-page-title{
+  padding: 50px 0;
+}
+.shopping-page-title > h1{
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.shopping-page-title > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+.shopping-page-title > ul > li{
+  display: inline-block;
+  font-size: 14px;
+  color: #939393;
+  position: relative;
+}
+.shopping-page-title > ul > li::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.shopping-page-title > ul > li:last-child::after{
+  display: none;
+}
+
+/* 장바구니 컨테이너 */
+.shopping-page-container{
+  border: 2px solid green;
+}
+
+/* 탭 제목 */
+.cart-tab-title{}
+.cart-tab-title > ul{
+  display: flex;
+}
+.cart-tab-title > ul > li{}
+
+/* 탭 내용 */
+.cart-tab-content{}

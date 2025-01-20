@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../contexts/CartContext';
 
 import { TfiPlus, TfiMinus } from "react-icons/tfi";
 
@@ -11,8 +12,9 @@ import "../styles/pages/ProductDetailPage.css"
 
 const ProductDetailPage = () => {
   const { id } = useParams();
-
   const product = products.find((product) => product.id === parseInt(id));
+
+  const { addToCart } = useContext(CartContext);
 
   /* 상품 가격 */
   const originalPrice = product.price; //원가
@@ -21,6 +23,17 @@ const ProductDetailPage = () => {
   /* 상품 수량 플러스,마이너스 */
   const [quantity, setQuantity] = useState(1);
   const totalPrice = quantity * discountedPrice;
+
+  /* 상품 수량 입력 */
+  const handleQuantityChange = (e) => {
+    const value = Number(e.target.value);
+    if (value >= 1) {
+      setQuantity(value);
+    } else {
+      alert('최소 주문수량은 1개입니다.');
+      setQuantity(1); // 값을 1로 초기화
+    }
+  };
 
   /* 상품 수량 증가 */
   const handleIncrease = () => {
@@ -33,9 +46,13 @@ const ProductDetailPage = () => {
     }else{
       alert('최소 주문수량은 1개 입니다.');
     }
-    
   }
   
+  /* 상품 장바구니에 담기 */
+  const handleAddToCart = () => {
+    addToCart({...product, quantity});
+  };
+
   return (
     <div className='product-detail-page'>
       <div className="product-detail-page-inner inner">
@@ -74,11 +91,16 @@ const ProductDetailPage = () => {
               <h3>{product.name}</h3>
               <div className='product-quantity'>
                 <button onClick={handleDecrease}>
-                  <TfiMinus className='quantity-icon'style={{display:'block'}}/>
+                  <TfiMinus className='quantity-icon'/>
                 </button>
                 <div>
-                  {/* <input type="text" id='quantity'/> */}
-                  {quantity}
+                  <input 
+                    type="text" 
+                    id='quantity'
+                    value={quantity}
+                    onChange={handleQuantityChange}
+                    min="1"
+                  />
                 </div>
                 <button onClick={handleIncrease}>
                   <TfiPlus className='quantity-icon'/>
@@ -95,7 +117,7 @@ const ProductDetailPage = () => {
             </div>
             <div className='shopping-button'>
               <button>buy it now</button>
-              <button>add cart</button>
+              <button onClick={handleAddToCart}>add cart</button>
               <button>wish</button>
             </div>
           </div>

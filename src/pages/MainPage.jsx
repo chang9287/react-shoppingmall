@@ -10,14 +10,14 @@ import PhotoReview from '../components/PhotoReview'
 
 import "../styles/pages/MainPage.css"
 
-const MainPage = () => {
+const MainPage = ({addToCart}) => {
   return (
     <div className='main-page'>
       <MainVisual />
-      <Categories />
-      <BestProducts />
+      <Categories addToCart={addToCart} />
+      <BestProducts addToCart={addToCart} />
       <TopBanner />
-      <NewArrivals />
+      <NewArrivals addToCart={addToCart} />
       <BottomBanner />
       <PhotoReview />
     </div>

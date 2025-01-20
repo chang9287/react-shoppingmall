@@ -8,7 +8,7 @@ import products from '../components/data/products.json'
 /* Css */
 import "../styles/pages/CategoryPage.css"
 
-const CategoryPage = () => {
+const CategoryPage = ({addToCart}) => {
   const { category } = useParams(); // 동적 라우팅에서 category 값 가져오기
 
   // 카테고리 이름 매핑 객체
@@ -66,7 +66,7 @@ const CategoryPage = () => {
         </div>
         <div className="products-list">
           {currentProducts.map((product, index) => (
-            <ProductCards key={index} product={product} />
+            <ProductCards key={index} product={product} addToCart={addToCart}/>
           ))}
         </div>
         {/* 페이지네이션 버튼 */}

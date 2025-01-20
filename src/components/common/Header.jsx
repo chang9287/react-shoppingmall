@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { BsBag } from "react-icons/bs";
 
 /* Css */
 import "../../styles/components/common/Header.css"
@@ -42,11 +42,11 @@ const Header = () => {
         <div className="header-up">
           <div className='logo'>
             <Link to='/'>
-              <img src="/assets/images/logo.png" alt="" />
+              <img src="/assets/images/logo.png" alt="Logo-Image" />
             </Link>
           </div>
           <ul className="login-wrap">
-            <li><Link to="">login</Link></li>
+            <li><Link to="/login">login</Link></li>
             <li><Link to="">join</Link></li>
             <li><Link to="">order</Link></li>
             <li><Link to="">cart</Link></li>
@@ -263,7 +263,7 @@ const Header = () => {
             </div>
             <div className="shopping">
               <Link to={'/shopping'}>
-                <HiOutlineShoppingBag className='shopping-bag' />
+                <BsBag className='shopping-bag' />
               </Link>
             </div>
           </div>

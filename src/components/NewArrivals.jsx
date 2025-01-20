@@ -8,7 +8,7 @@ import products from '../components/data/products.json'
 /* Css */
 import "../styles/components/NewArrivals.css"
 
-const NewArrivals = () => {
+const NewArrivals = ({addToCart}) => {
   const newPerRow = 8; //한 페이지에 보여줄 갯수
   const [newCurrentPage, setNewCurrentPage] = useState(1)
   
@@ -32,7 +32,7 @@ const NewArrivals = () => {
         <Title title="new arrivals" subtitle="새롭게 추가된 상품들 확인해보세요!!" />
         <div className="new-products-list">
           {newCurrentProducts.map((product, index) => (
-            <ProductCards key={index} product={product} />
+            <ProductCards key={index} product={product} addToCart={addToCart} />
           ))}
         </div>
         {/* 페이지네이션 버튼 */}
