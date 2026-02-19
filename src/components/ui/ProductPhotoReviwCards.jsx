@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 
-
-
 /* Css */
 import "../../styles/components/ui/ProductPhotoReviwCards.css"
 
@@ -14,7 +12,6 @@ const ProductPhotoReviwCards = ({photoreview}) => {
 
   const fullstar = Math.floor(stars);
   const halfstar = stars - fullstar >= 0.5 ? 1 : 0;
-  //const emptystar = 5 - fullstar - halfstar;
 
   return (
     <div className='photo-review-card'>

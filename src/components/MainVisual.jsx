@@ -2,9 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 
-
-
-// Import Swiper styles
+/* Import Swiper styles */
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,7 +10,7 @@ import 'swiper/css/pagination';
 /* Css */
 import "../styles/components/MainVisual.css"
 
-// import required modules
+/* import required modules */
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const MainVisual = () => {
@@ -71,10 +69,6 @@ const MainVisual = () => {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        /* autoplay={{
-          delay: 3000, // 슬라이드 전환 시간 (밀리초, 3초)
-          disableOnInteraction: false, // 사용자와 상호작용해도 자동 슬라이드 유지
-        }} */
         allowTouchMove={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, /* Autoplay */]}
         className="mySwiper"

@@ -11,7 +11,7 @@ import "../styles/pages/CategoryPage.css"
 const CategoryPage = ({addToCart}) => {
   const { category } = useParams(); // 동적 라우팅에서 category 값 가져오기
 
-  // 카테고리 이름 매핑 객체
+  //카테고리 이름 매핑 객체
   const categoryNames = {
     'accessory' : "악세서리",
     'digital' : "디지털",
@@ -29,8 +29,11 @@ const CategoryPage = ({addToCart}) => {
   );
 
   /* pagination */
-  const productPerPage = 8; //한 페이지에 보여줄 갯수
-  const [productCurrentPage, setProductCurrentPage] = useState(1) //시작 페이지
+  //한 페이지에 보여줄 갯수
+  const productPerPage = 8; 
+
+  //시작 페이지
+  const [productCurrentPage, setProductCurrentPage] = useState(1)
 
   const CurrentIndex = (productCurrentPage - 1) * productPerPage;
   const currentProducts = filteredProducts.slice(CurrentIndex, CurrentIndex + productPerPage );

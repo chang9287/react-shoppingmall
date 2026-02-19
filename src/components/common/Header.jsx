@@ -1,11 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import { Link } from 'react-router-dom';
 import { BsBag } from "react-icons/bs";
+
+import { CartContext } from '../../contexts/CartContext';
 
 /* Css */
 import "../../styles/components/common/Header.css"
 
 const Header = () => {
+  /* 장바구니 아이콘 수량 */
+  const { cart } = useContext(CartContext);
+  const cartItemCount = cart.length;
 
   /* 버튼 클릭 시 Navigation 열림,닫힘 */
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,16 +30,14 @@ const Header = () => {
         setShowShadow(false);
       }
     }
-    /* 스크롤 이벤트 리스너 추가 */
+    /* 스크롤 이벤트 추가 */
     window.addEventListener('scroll', handleScroll);
 
-    /* 컴포넌트 언마운트 시 이벤트 리스너 제거 */
+    /* 컴포넌트 언마운트 시 이벤트 제거 */
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [])
-
-  
 
   return (
     <header className={`header ${showShadow ? 'header-shadow' : ''}`}>
@@ -264,6 +267,7 @@ const Header = () => {
             <div className="shopping">
               <Link to={'/shopping'}>
                 <BsBag className='shopping-bag' />
+                <span className="shopping-count">{cartItemCount}</span>
               </Link>
             </div>
           </div>
@@ -347,7 +351,6 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        {/* <div className="nav-bg"></div> */}
       </div>
     </header>
   )

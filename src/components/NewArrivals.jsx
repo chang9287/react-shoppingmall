@@ -9,7 +9,9 @@ import products from '../components/data/products.json'
 import "../styles/components/NewArrivals.css"
 
 const NewArrivals = ({addToCart}) => {
-  const newPerRow = 8; //한 페이지에 보여줄 갯수
+  //한 페이지에 보여줄 갯수
+  const newPerRow = 8; 
+  
   const [newCurrentPage, setNewCurrentPage] = useState(1)
   
   //isNew가 true인 상품만 추출

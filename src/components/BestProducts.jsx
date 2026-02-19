@@ -9,8 +9,11 @@ import products from '../components/data/products.json'
 import "../styles/components/BestProducts.css"
 
 const BestProducts = ( {addToCart} ) => {
-  const bestPerRow = 8; //한 페이지에 보여줄 갯수
-  const [bestCurrentPage, setBestCurrentPage] = useState(1) //현재 페이지
+  //한 페이지에 보여줄 갯수
+  const bestPerRow = 8; 
+
+  //현재 페이지
+  const [bestCurrentPage, setBestCurrentPage] = useState(1) 
 
   //isBest가 true인 상품만 추출
   const bestproducts = products.filter((product) => product.isBest);
@@ -25,21 +28,6 @@ const BestProducts = ( {addToCart} ) => {
   for(let i = 1; i <= bestPageCount; i++){
     bestPages.push(i)
   }
-
-  /* 
-  0  0 ~ 7
-  8  8 ~ 15
-  16 16 ~ 23
-  24 
-  */
-  /*
-  currentpage 1
-  0 = 0 * 8
-    = [0, 8] 0 1 2 3 4 5 6 7
-  currentpage 2
-  8 = 1 * 8
-    = [8 16] 8 9 10 11 12 13 14 15
-  */
 
   return (
     <div className='best-products'>

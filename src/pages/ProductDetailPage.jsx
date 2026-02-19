@@ -17,8 +17,10 @@ const ProductDetailPage = () => {
   const { addToCart } = useContext(CartContext);
 
   /* 상품 가격 */
-  const originalPrice = product.price; //원가
-  const discountedPrice = Math.round(originalPrice * (1 - product.discountRate / 100)); //할인된 가격
+  //원가
+  const originalPrice = product.price; 
+  //할인된 가격
+  const discountedPrice = Math.round(originalPrice * (1 - product.discountRate / 100)); 
 
   /* 상품 수량 플러스,마이너스 */
   const [quantity, setQuantity] = useState(1);
@@ -31,7 +33,8 @@ const ProductDetailPage = () => {
       setQuantity(value);
     } else {
       alert('최소 주문수량은 1개입니다.');
-      setQuantity(1); // 값을 1로 초기화
+      //값을 1로 초기화
+      setQuantity(1); 
     }
   };
 

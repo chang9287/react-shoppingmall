@@ -12,21 +12,21 @@ import ShoppingPage from './pages/ShoppingPage';
 import SideButton from './components/common/SideButton';
 import LoginPage from './pages/LoginPage';
 
-
-
 //CSS
 import "../src/styles/reset/reset.css"
 import "../src/styles/global.css"
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation(); // 현재 경로(pathname) 추적
+  //현재 경로(pathname) 추적
+  const { pathname } = useLocation(); 
 
   useEffect(() => {
-    // 경로가 변경될 때마다 스크롤을 상단으로 이동
+    //경로가 변경될 때마다 스크롤을 상단으로 이동
     window.scrollTo(0, 0);
-  }, [pathname]); // pathname이 변경될 때마다 useEffect 실행
+  }, [pathname]); //pathname이 변경될 때마다 useEffect 실행
 
-  return null; // UI를 렌더링하지 않음
+  //UI를 렌더링하지 않음
+  return null;
 };
 
 function App() {

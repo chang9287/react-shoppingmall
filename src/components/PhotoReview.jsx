@@ -17,7 +17,7 @@ import "../styles/components/PhotoReview.css"
 
 const PhotoReview = () => {
   useEffect(() => {
-    // Swiper가 DOM 요소를 찾을 수 있도록 보장
+    //Swiper가 DOM 요소를 찾을 수 있도록 보장
     const nextButton = document.querySelector('.custom-next');
     const prevButton = document.querySelector('.custom-prev');
 
@@ -31,7 +31,7 @@ const PhotoReview = () => {
     }
 
     return () => {
-      // Cleanup
+      //Cleanup
       if (nextButton && prevButton) {
         nextButton.removeEventListener('click', () => {});
         prevButton.removeEventListener('click', () => {});
@@ -51,7 +51,7 @@ const PhotoReview = () => {
           <Swiper
             modules={[Pagination, Navigation]}
             pagination={{
-              el: '.custom-pagination', // 외부 pagination
+              el: '.custom-pagination', //외부 pagination
               type: 'progressbar' 
             }}
             navigation={{

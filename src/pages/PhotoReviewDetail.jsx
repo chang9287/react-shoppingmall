@@ -12,9 +12,11 @@ import products from '../components/data/products.json';
 import "../styles/pages/PhotoReviewDetail.css"
 
 const PhotoReviewDetail = () => {
+  //URL 파라미터에서 reviewIdx 가져오기
+  const { reviewIdx } = useParams(); 
 
-  const { reviewIdx } = useParams(); // URL 파라미터에서 reviewIdx 가져오기
-  const review = productsReview.find((review) => review.reviewIdx === parseInt(reviewIdx)); // 리뷰 찾기
+  //리뷰 찾기
+  const review = productsReview.find((review) => review.reviewIdx === parseInt(reviewIdx)); 
   //parseInt(reviewIdx) : URL 파라미터로 받은 reviewIdx를 숫자로 변환
   //리뷰의 reviewIdx과 파라미터로 받은 reviewIdx가 서로 일치하는지 확인
 
@@ -28,7 +30,7 @@ const PhotoReviewDetail = () => {
   const fullstar = Math.floor(stars);
   const halfstar = stars - fullstar >= 0.5 ? 1 : 0;
 
-  // 리뷰와 연결된 상품 정보 찾기
+  //리뷰와 연결된 상품 정보 찾기
   const product = products.find((product) => product.id === review.productId);
 
   if (!product) {
@@ -127,36 +129,3 @@ const PhotoReviewDetail = () => {
 }
 
 export default PhotoReviewDetail
-
-
-/* 
-  {
-    "reviewIdx" : 1,
-    "reviewTitle" : "디자인은 멋진데, 가격이 좀 비싸네요.",
-    "reviewId" : "SnapLoom001",
-    "reviewStars" : 4.5,
-    "reviewDate" : "2024-09-02",
-    "reviewDescription" : "모던 프레임 전신거울을 구입했는데, 디자인이 매우 세련되고 방이 더 넓어 보이게 해 줍니다. 하지만 가격이 다소 비싸서 별점을 하나 뺐습니다. 전체적으로는 만족스러워요.",
-    "reviewImageUrl" : "/assets/images/homedeco/product-homedeco-04.jpg",
-    "productId" : 37,
-    "productImageUrl" : "/assets/images/homedeco/product-homedeco-04.jpg",
-    "productName" : "모던 프레임 전신거울",
-    "productPrice" : 9000
-  },
-*/
-
-/* 
-차이점
-productsReview[currentIndex - 1]
-  - productsReview는 전체 리뷰 목록을 담고 있는 배열입니다.
-  - currentIndex는 현재 리뷰의 인덱스를 나타냅니다.
-  - productsReview[currentIndex - 1]는 현재 리뷰의 바로 이전 리뷰 객체
-
-  이 표현은 전체 리뷰 목록에서 이전 리뷰를 찾는 데 사용됩니다.
-
-review[currentIndex - 1]
-  - review는 현재 리뷰 객체를 가리킵니다.
-  - 즉, productsReview 배열에서 찾은 특정 리뷰 객체입니다.
-
-  - review는 배열이 아니라 객체이기 때문에 review[currentIndex - 1]와 같은 표현은 의미가 없음
-*/

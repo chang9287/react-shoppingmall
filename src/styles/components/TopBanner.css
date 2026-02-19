@@ -1,10 +1,8 @@
 .top-banner{
   width: 100%;
   margin-top: 100px;
-  /* border: 2px solid purple; */
 }
 
-.top-banner-wrap{}
 .top-banner-wrap a{
   display: block;
   border-radius: 10px;

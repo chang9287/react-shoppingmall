@@ -1,6 +1,5 @@
 .photo-review{
   width: 100%;
-  /* border: 2px solid cornflowerblue; */
   margin-top: 100px;
   position: relative;
 }
@@ -18,7 +17,6 @@
 
 .photo-review-list{
   padding: 0 10px;
-  
 }
 
 .photo-review-more{
@@ -41,10 +39,7 @@
   transform: translateY(1px);
 }
 
-
 /* 스와이퍼 */
-
-
 .swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite{
   width: 40%;
   height: 2px;
@@ -61,8 +56,7 @@
   position: relative;
 }
 
-.custom-prev,
-.custom-next {
+.custom-prev, .custom-next {
   position: absolute;
   top: 50%; 
   transform: translateY(-50%);
@@ -74,8 +68,7 @@
   background-color: transparent;
   color: #777;
 }
-.custom-prev:disabled,
-.custom-next:disabled{
+.custom-prev:disabled, .custom-next:disabled{
   opacity: 0.2;
 }
 

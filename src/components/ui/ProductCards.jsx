@@ -5,7 +5,6 @@ import { CartContext } from '../../contexts/CartContext'
 /* Css */
 import "../../styles/components/ui/ProductCards.css"
 
-
 const ProductCards = ({product}) => {
 
   const originalPrice = product.price;

@@ -1,10 +1,7 @@
 .photo-review-page{
   width: 100%;
-  /* border: 2px solid cornflowerblue; */
   position: relative;
 }
-.photo-review-page-inner{}
-
 .photo-review-page-title{
   text-align: center;
   padding: 45px 0 40px 0;
@@ -20,7 +17,6 @@
   margin-bottom: 150px;
 }
 
-
 /* 스와이퍼 */
 photo-review-page > .swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite{
   width: 40%;
@@ -34,8 +30,7 @@ photo-review-page > .swiper-horizontal > .swiper-pagination-progressbar, .swiper
   background: #777;
 }
 
-.review-page-custom-prev,
-.review-page-custom-next {
+.review-page-custom-prev, .review-page-custom-next {
   position: absolute;
   top: 50%; 
   transform: translateY(-50%);
@@ -47,18 +42,15 @@ photo-review-page > .swiper-horizontal > .swiper-pagination-progressbar, .swiper
   background-color: transparent;
   color: #777;
 }
-.review-page-custom-prev:disabled,
-.review-page-custom-next:disabled{
+.review-page-custom-prev:disabled, .review-page-custom-next:disabled{
   opacity: 0.2;
 }
-
 .review-page-custom-prev {
   left: -50px; 
 }
 .review-page-custom-prev::after {
   content: 'prev';
 }
-
 .review-page-custom-next {
   right: -50px; /* Swiper의 오른쪽 밖 */
 }
@@ -129,19 +121,16 @@ photo-review-page > .swiper-horizontal > .swiper-pagination-progressbar, .swiper
   appearance: none; /* 기본 스타일 제거 */
   -webkit-appearance: none; /* Safari 및 Chrome용 */
   -moz-appearance: none; /* Firefox용 */
-
   background-image: url(../../../public/assets/images/PhotoReviewPage-select-img.png);
   background-repeat: no-repeat;
   background-position: right 10px center; /* 화살표 위치 조정 */
   background-size: 12px; /* 화살표 크기 조정 */
   padding-right: 30px; /* 화살표를 위한 공간 확보 */
-  /* PhotoReviewPage-select-img.png */
 }
 .search-option > select:focus{
   border: 1px solid #333;
   outline: none;
 }
-.search-option > select > option {}
 .search-option > input{
   border: 1px solid #e0e0e0;
   height: 40px;
