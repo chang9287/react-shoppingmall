@@ -2,7 +2,6 @@ import React, {useContext, useState} from 'react'
 import { Link } from 'react-router-dom';
 import { TfiPlus, TfiMinus } from "react-icons/tfi";
 import { GrCheckmark } from "react-icons/gr";
-import { PiWarningCircleLight } from "react-icons/pi";
 import { PiWarningCircleThin } from "react-icons/pi";
 
 import { CartContext } from '../contexts/CartContext';
