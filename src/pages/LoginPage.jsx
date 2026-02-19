@@ -15,7 +15,7 @@ const LoginPage = () => {
         <form className='user-wrap'>
           <input type="text" placeholder='아이디를 입력해주세요' />
           <input type="password" placeholder='비밀번호를 입력해주세요' />
-          <button className='normal-login-btn'>로그인</button>
+          <button type="button" className='normal-login-btn'>로그인</button>
           <ul>
             <li>
               <Link to="">아이디찾기</Link>
