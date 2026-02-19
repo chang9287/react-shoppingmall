@@ -57,11 +57,15 @@
 
 ## 📄 주요 페이지
 
-|                               메인 페이지                               |                  서브 페이지 - 카테고리 페이지                   |                               서브 페이지 - 상품 상세 페이지                       |                               서브 페이지 - 포토리뷰 페이지                       |                               서브 페이지 - 포토리뷰 상세 페이지                       |                               서브 페이지 - 로그인 페이지                      |                               서브 페이지 - 장바구니 페이지                       |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
-| <img src="public/assets/images/Readme-image/mainpage.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/categories-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/product-detail-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/photo-review-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/photo-review-detail-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/login-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/shopping-page.png" alt="Sample Page" height="400px" /> |
+|                               메인 페이지                               |                  서브 페이지 - 카테고리 페이지                   |                               서브 페이지 - 상품 상세 페이지                       |                               서브 페이지 - 포토리뷰 페이지                       
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
+| <img src="public/assets/images/Readme-image/mainpage.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/categories-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/product-detail-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/photo-review-page.png" alt="Sample Page" height="400px" /> |
 <br />
 
+|                               서브 페이지 - 포토리뷰 상세 페이지                       |                               서브 페이지 - 로그인 페이지                      |                               서브 페이지 - 장바구니 페이지                     |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------:  | :---------------------------------------------------------------------:  |
+| <img src="public/assets/images/Readme-image/photo-review-detail-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/login-page.png" alt="Sample Page" height="400px" /> | <img src="public/assets/images/Readme-image/shopping-page.png" alt="Sample Page" height="400px" /> |
+<br />
 
 ## 📌 페이지 설명 
 |                               페이지                               |                               설명                               |
