@@ -286,8 +286,8 @@ const ShoppingPage = () => {
                       </p>
                     </div>
                     <div className="total-buttons">
-                      <button className="all-item-order">전체상품주문</button>
-                      <button className="select-item-order">선택상품주문</button>
+                      <button type="button" className="all-item-order">전체상품주문</button>
+                      <button type="button" className="select-item-order">선택상품주문</button>
                     </div>
                     <p className="total-description">
                       <img src="/assets/images/total-button-icon.svg" alt="" />

@@ -35,7 +35,7 @@ const LoginPage = () => {
           <input type="text" placeholder='주문자명' />
           <input type="text" placeholder='주문번호' />
           <input type="password" placeholder='비회원주문 비밀번호' />
-          <button className='guest-login-btn'>주문조회</button>
+          <button type="button" className='guest-login-btn'>주문조회</button>
         </form>
       )
     }

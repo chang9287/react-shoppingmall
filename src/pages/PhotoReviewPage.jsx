@@ -96,7 +96,7 @@ const PhotoReviewPage = () => {
               <option value="">상품정보</option>
             </select>
             <input type="text" />
-            <button>찾기</button>
+            <button type="button">찾기</button>
           </form>
         </div>
       </div>
